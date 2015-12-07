@@ -1,7 +1,7 @@
 # Survive-bot
 In times of **need**, public/users generally take to social media like twitter and facebook to communicate their requirements to the world. There is a disparity in the spread of information and delay in reaching to the intended officials.
 
-Survive bot is an API to track any given tags used commonly for an emergency and process this information to to be sent to required authorities by any means possible and coordinate thier efforts to prevent overlap.
+Survive bot is intended to track any given tags used commonly for an emergency and process this information to to be sent to required authorities by any means possible and coordinate thier efforts to prevent overlap.
 
 **Steps involved**:
 
