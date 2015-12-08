@@ -8,12 +8,13 @@ access_token_secret = "KxxXLZkv6ioINuU3rFRdRDwZ4dWBF6snBaP3o8Hx4SjQj"
 consumer_key = "1896uddb7q0H7wXl1Snpny3Hm"
 consumer_key_secret ="YFtmhrtZQ9iptyBC7PWCkIjBRIUCjkrcxAdFIuTQxt0R9GW3es"
 
-
+logfile = open('mylog.txt',"a")
 class mystreamlistener(StreamListener):
     
     def on_data(self,data):
         tweet = json.loads(data)
         print (tweet['text'])
+        logfile.write(tweet['text'].encode('utf8'))
         return True
         
     def on_error(self,status):
@@ -27,4 +28,4 @@ if __name__ == '__main__':
     auth.set_access_token(access_token,access_token_secret)
     stream = Stream(auth,streamdata)
     
-    stream.filter(track=['earthquake'])
+    stream.filter(track=['chennai','rains','rain','chennairainshelp'])
