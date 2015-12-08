@@ -27,4 +27,4 @@ if __name__ == '__main__':
     auth.set_access_token(access_token,access_token_secret)
     stream = Stream(auth,streamdata)
     
-    stream.filter(track=['flood','chennai','cuddalore'])
+    stream.filter(track=['earthquake'])
